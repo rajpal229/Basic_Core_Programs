@@ -7,7 +7,7 @@
             bool Flag = true;
             while (Flag)
             {
-                Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year");
+                Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2");
                 int Option = Convert.ToInt32(Console.ReadLine());
                 switch (Option)
                 {
@@ -18,6 +18,10 @@
                     case 2:
                         LeapYear leapYear = new LeapYear();
                         leapYear.checkLeapYear();
+                        break;
+                    case 3:
+                        PowerOfTwo powerofTwo = new PowerOfTwo();
+                        powerofTwo.powerofTwo();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
