@@ -8,7 +8,7 @@
             while (Flag)
             {
                 Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2\n" +
-                    "4. Harmonic Number\n5.Prime Number");
+                    "4. Harmonic Number\n5.Prime Number\n6.Quotient Reminder");
                 int Option = Convert.ToInt32(Console.ReadLine());
                 switch (Option)
                 {
@@ -31,6 +31,10 @@
                     case 5:
                         PrimeFactors factors = new PrimeFactors();
                         factors.Prime_Factors();
+                        break;
+                    case 6:
+                        QuotientReminder quotientReminder = new QuotientReminder();
+                        quotientReminder.ComputeQuotientReminder();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
