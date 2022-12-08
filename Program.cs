@@ -8,7 +8,8 @@
             while (Flag)
             {
                 Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2\n" +
-                    "4. Harmonic Number\n5.Prime Number\n6.Quotient Reminder\n7. Swap Numbers");
+                    "4. Harmonic Number\n5.Prime Number\n6.Quotient Reminder\n7. Swap Numbers" +
+                    "\n8. Even Odd");
                 int Option = Convert.ToInt32(Console.ReadLine());
                 switch (Option)
                 {
@@ -39,6 +40,10 @@
                     case 7:
                         SwapNumbers swap_Numbers = new SwapNumbers();
                         swap_Numbers.SwapTwoNumbers();
+                        break;
+                    case 8:
+                        EvenOdd evenOdd = new EvenOdd();
+                        evenOdd.CheckEvenOdd();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
