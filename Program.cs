@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2\n" +
                     "4. Harmonic Number\n5.Prime Number\n6.Quotient Reminder\n7. Swap Numbers" +
-                    "\n8. Even Odd\n9. Vowel Consonant");
+                    "\n8. Even Odd\n9. Vowel Consonant\n10. Largest Numbers of Three");
                 int Option = Convert.ToInt32(Console.ReadLine());
                 switch (Option)
                 {
@@ -48,6 +48,10 @@
                     case 9:
                         VowelConsonant vowelOrConsonant = new VowelConsonant();
                         vowelOrConsonant.CheckVowelorConsanant();
+                        break;
+                    case 10:
+                        LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.NumberCoparison();
                         break;
                     default:
                         Console.WriteLine("Enter Valid Number");
