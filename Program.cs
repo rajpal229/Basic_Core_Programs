@@ -7,7 +7,8 @@
             bool Flag = true;
             while (Flag)
             {
-                Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2\n4. Harmonic Number");
+                Console.WriteLine("Enter:\n 1. Flip Coin \n 2. Leap Year\n3. Power of 2\n" +
+                    "4. Harmonic Number\n5.Prime Number");
                 int Option = Convert.ToInt32(Console.ReadLine());
                 switch (Option)
                 {
